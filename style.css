@@ -1,60 +1,95 @@
-
-
 body{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 h1{
     box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
     color: white;
     background-color: black;
     height: 80px;
- 
+    font-size: 35px;    
 }
 
 img{
-   
     height: 230px;
     width: 230px;
     transition: 0.5s;
 }
 
 .container{
-    margin-top: 70px;
+    margin: 70px;
 }
 
-
-
-
-
- 
-/* body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-.images img{
-
-    cursor: pointer;
-    transition: 0.4s all ease;
-}
-
-.modal img:hover{
+.image:hover{
     transform: scale(0.9);
 }
 
-.container{
-    border: 1px solid red;
-    margin :10px;
-   
+.modal{
+    /* display: none; */
+    position: fixed;
+    /* z-index: 1; */
+    left: 0;
+    top: 80px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.modal{
+.modalContent{
+    display: grid;
+    grid-template-columns: 400px 460px 40px;
+    padding: 0;
+    background-color: white;
+    width: 900px;
+    height: 450px;
+    border: 2px solid black;
+    align-items: center;
+    margin: 6% auto;
+    box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.3), 0 3px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.modalImg{
+    margin: 0;
+    padding: 0;
+    height: 450px;
+    width: 400px;
+}
+
+.textContent{
+    margin-left: 70px;
+    margin-bottom: 40px;
+    color: 	#606060;
+}
+
+.modalContent h2{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.modalContent p{
+    font-size: 19px;
+    font-family: 'Crimson Text', serif;
+}
+
+.closeBtn{
+    color: 	#606060;
+    font-size: 40px;
+    margin-bottom: 400px;
+}
+
+.closeBtn:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+
+/* .modal{
     box-sizing: border-box;
     display: grid;
     grid-template-columns: (autofit, 320px);
@@ -81,6 +116,5 @@ img{
 @media screen and(min-width: 1280px){
 
 }
-
-
  */
+
