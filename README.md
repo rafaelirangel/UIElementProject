@@ -14,11 +14,11 @@ A modal window creates a mode that disables the main window but keeps it visible
 link to my git
 
 
-## Data source
+## Data Source
 #### Some of the methods used in this project it was based on:
-[YOUTUBE](www.youtube.com)  
-[w3Schools](www.w3schools.com)  
-[Stack Overflow](www.stackoverflow.com)  
+[YOUTUBE](https://www.youtube.com/)  
+[w3Schools](https://www.w3schools.com/)  
+[Stack Overflow](https://stackoverflow.com/questions)  
 
 #### All of the images were taken from [Unsplash](https://unsplash.com/)
 
