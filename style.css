@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    width: 100%;
 }
 
 h1{
@@ -15,93 +16,102 @@ h1{
     font-size: 35px;    
 }
 
-img{
-    height: 230px;
-    width: 230px;
-    transition: 0.5s;
+.container{
+    width: 100%;
 }
 
-.container{
-    margin: 70px;
+.image{
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+    transition: 0.4s;
+    padding: 0;
+    margin: 0;
+}
+
+.imageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    flex-basis: 100%;
+    margin: 50px 0;
 }
 
 .image:hover{
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .modal{
-    /* display: none; */
+    display: none;
     position: fixed;
-    /* z-index: 1; */
     left: 0;
     top: 80px;
     height: 100%;
     width: 100%;
     overflow: auto;
     background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.6s ease-out;
 }
 
 .modalContent{
-    display: grid;
-    grid-template-columns: 400px 460px 40px;
-    padding: 0;
-    background-color: white;
-    width: 900px;
-    height: 450px;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 1200px;
     border: 2px solid black;
-    align-items: center;
     margin: 6% auto;
+    background-color: white;
     box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.3), 0 3px 4px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.6s ease-out;
 }
 
 .modalImg{
     margin: 0;
     padding: 0;
     height: 450px;
-    width: 400px;
+    width: 600px;
+    flex: 1.5;
 }
 
 .textContent{
-    margin-left: 70px;
-    margin-bottom: 40px;
     color: 	#606060;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.closeButton{
+    margin-right: 10px;
+    color: 	#606060;
+    font-size: 40px;
+}
+
+.closeButton:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .modalContent h2{
-    font-weight: bold;
     font-size: 32px;
 }
 
 .modalContent p{
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'Crimson Text', serif;
+    align-items: stretch;
 }
 
-.closeBtn{
-    color: 	#606060;
-    font-size: 40px;
-    margin-bottom: 400px;
-}
+/* @media screen and(max-width: 320px){
+    
+} */
 
-.closeBtn:hover{
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-
-
-/* .modal{
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: (autofit, 320px);
-
-    row-gap: 10px;
-    column-gap: 10px;
-    width: 100%;
-    place-items: center;
-}
-
-@media screen and(min-width: 425px){
-    font-size: ;
+@media screen and(max-width: 425px){
+    .image{
+        border-radius: 5px;
+        height: 400px;
+        width: 400px;
+        transition: 0.4s;
+    }
     
 }
 
@@ -115,6 +125,7 @@ img{
 
 @media screen and(min-width: 1280px){
 
+
 }
- */
+
 
