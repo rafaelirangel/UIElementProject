@@ -11,7 +11,7 @@ A modal window creates a mode that disables the main window but keeps it visible
 **If you are interested on knowing more about Modal** [CLICK HERE!](https://en.wikipedia.org/wiki/Modal_window)
 
 ## View the Demo
-[My github](https://github.com/rafaelirangel/UIElementProject)
+[Webpage](https://rafaelirangel.github.io/UIElementProject/)
 
 
 ## Data Source
